@@ -63,11 +63,6 @@ ARG MODEL_TYPE
 # Change working directory custom_nodes
 WORKDIR /comfyui/custom_nodes
 
-RUN mkdir civitai_comfy_nodes
-
-# Change working directory civitai_comfy_nodes
-WORKDIR /comfyui/custom_nodes/civitai_comfy_nodes
-
 # Create CivitAI custom node
 RUN git clone https://github.com/civitai/civitai_comfy_nodes.git
 
@@ -101,6 +96,7 @@ FROM base as final
 
 # Copy models from stage 2 to the final image
 COPY --from=downloader /comfyui/models /comfyui/models
+COPY --from=downloader /comfyui/custom_nodes /comfyui/custom_nodes
 
 # Start container
 CMD ["/start.sh"]
