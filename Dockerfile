@@ -60,8 +60,13 @@ FROM base as downloader
 ARG HUGGINGFACE_ACCESS_TOKEN
 ARG MODEL_TYPE
 
-# Change working directory to ComfyUI
+# Change working directory custom_nodes
 WORKDIR /comfyui/custom_nodes
+
+RUN mkdir civitai_comfy_nodes
+
+# Change working directory civitai_comfy_nodes
+WORKDIR /comfyui/custom_nodes/civitai_comfy_nodes
 
 # Create CivitAI custom node
 RUN git clone https://github.com/civitai/civitai_comfy_nodes.git
