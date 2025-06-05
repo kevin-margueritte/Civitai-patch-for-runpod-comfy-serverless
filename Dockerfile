@@ -61,6 +61,12 @@ ARG HUGGINGFACE_ACCESS_TOKEN
 ARG MODEL_TYPE
 
 # Change working directory to ComfyUI
+WORKDIR /comfyui/custom_nodes
+
+# Create CivitAI custom node
+RUN git clone https://github.com/civitai/civitai_comfy_nodes.git
+
+# Change working directory to ComfyUI
 WORKDIR /comfyui
 
 # Create necessary directories
