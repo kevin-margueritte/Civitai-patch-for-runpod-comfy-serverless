@@ -1,6 +1,6 @@
-# CIVIT AI Patch for runpod-worker-comfy
+# Civitai Patch for runpod-worker-comfy
 
-This repository provides a patch for runpod-worker-comfy, adding native support for [Civit AI nodes](https://github.com/civitai/civitai_comfy_nodes).  
+This repository provides a patch for runpod-worker-comfy, adding native support for [Civitai nodes](https://github.com/civitai/civitai_comfy_nodes).  
 
 ---
 
