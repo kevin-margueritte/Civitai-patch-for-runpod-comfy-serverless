@@ -6,6 +6,9 @@ This repository provides a patch for runpod-worker-comfy, adding native support 
 
 # runpod-worker-comfy
 
+> [!WARNING]
+> this project is deprecated, please use https://github.com/runpod-workers/worker-comfyui
+
 > [ComfyUI](https://github.com/comfyanonymous/ComfyUI) as a serverless API on [RunPod](https://www.runpod.io/)
 
 <p align="center">
